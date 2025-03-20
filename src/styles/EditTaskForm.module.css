@@ -1,0 +1,62 @@
+.editTaskForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.editTaskForm h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.editTaskForm label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.editTaskForm input,
+.editTaskForm textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.editTaskForm input[type="checkbox"] {
+    width: auto;
+}
+
+.editTaskForm .saveButton {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.editTaskForm .saveButton:hover {
+    background-color: #45a049;
+}
+
+.editTaskForm .cancelButton {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.editTaskForm .cancelButton:hover {
+    background-color: #e53935;
+}

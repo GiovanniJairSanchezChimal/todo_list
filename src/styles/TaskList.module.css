@@ -1,0 +1,151 @@
+.taskList {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #87ceeb; /* Sky blue background */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.taskItem {
+    background-color: #e3f2fd; /* Light blue */
+    border: 1px solid #bbdefb; /* Lighter blue border */
+    border-radius: 5px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+    margin-bottom: 15px;
+}
+
+.taskItem.completed {
+    background-color: #d1e7dd; /* Light green for completed tasks */
+    text-decoration: line-through;
+    color: #6c757d; /* Muted text color */
+}
+
+.taskItem input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.taskItem button {
+    margin-left: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.taskItem button.edit {
+    background-color: #64b5f6; /* Blue */
+    color: white;
+}
+
+.taskItem button.delete {
+    background-color: #1976d2; /* Darker blue */
+    color: white;
+}
+
+.editButton {
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: #64b5f6; /* Blue */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.editButton:hover {
+    background-color: #42a5f5; /* Slightly darker blue */
+}
+
+.deleteButton {
+    padding: 5px 10px;
+    background-color: #1976d2; /* Darker blue */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.deleteButton:hover {
+    background-color: #1565c0; /* Even darker blue */
+}
+
+.newTaskButton {
+    padding: 10px 20px;
+    background-color: #d3d3d3; /* Light gray */
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.newTaskButton:hover {
+    background-color: #b0b0b0; /* Slightly darker gray */
+}
+
+#filter {
+    margin: 10px 0;
+    padding: 5px;
+    border: 1px solid #bbdefb; /* Lighter blue */
+    border-radius: 4px;
+    background-color: #e3f2fd; /* Light blue */
+    color: #1565c0; /* Dark blue */
+    cursor: pointer;
+}
+
+#filter:focus {
+    outline: none;
+    border-color: #64b5f6; /* Blue */
+}
+
+.filterContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 0.5rem;
+}
+
+.filterLabel {
+    font-weight: bold;
+    color: #1565c0; /* Dark blue */
+}
+
+.filterSelect {
+    padding: 5px;
+    border: 1px solid #bbdefb; /* Lighter blue */
+    border-radius: 4px;
+    background-color: #e3f2fd; /* Light blue */
+    color: #1565c0; /* Dark blue */
+    cursor: pointer;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.filterSelect:focus {
+    outline: none;
+    border-color: #64b5f6; /* Blue */
+    background-color: #bbdefb; /* Slightly darker blue */
+}
+
+@media (max-width: 600px) {
+    .taskList {
+        padding: 0.5rem;
+    }
+
+    .taskItem {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .taskItem button {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+}
