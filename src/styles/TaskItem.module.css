@@ -1,0 +1,58 @@
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s;
+}
+
+.task-item.completed {
+    background-color: #d4edda;
+    text-decoration: line-through;
+}
+
+.task-title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.task-description {
+    font-size: 1em;
+    color: #555;
+}
+
+.task-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button.edit {
+    background-color: #007bff;
+    color: white;
+}
+
+.button.delete {
+    background-color: #dc3545;
+    color: white;
+}
+
+.button.completed {
+    background-color: #28a745;
+    color: white;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
