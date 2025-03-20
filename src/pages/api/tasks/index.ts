@@ -24,6 +24,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                     title,
                     description,
                     dueDate: new Date(dueDate), // Ensure this is a Date object
+                    deadline: new Date(dueDate), // Provide a value for deadline
                     completed: false,
                 },
             });

@@ -59,6 +59,16 @@ const EditTaskForm: React.FC<EditTaskFormProps> = ({ task, onSave, onCancel }) =
                 />
             </div>
             <div>
+                <label htmlFor="deadline">Deadline:</label>
+                <input
+                    type="date"
+                    id="deadline"
+                    value={dueDate} // Use dueDate or a separate state for deadline
+                    onChange={(e) => setDueDate(e.target.value)} // Update state accordingly
+                    required
+                />
+            </div>
+            <div>
                 <label htmlFor="completed">Completed:</label>
                 <input
                     type="checkbox"
